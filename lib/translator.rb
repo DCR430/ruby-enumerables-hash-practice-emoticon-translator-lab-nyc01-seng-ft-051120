@@ -20,7 +20,7 @@ def get_japanese_emoticon
     emoticon ? library[emoticon][:japanese] : "Sorry, that emoticon was not found"
   end
 
-  
+
   # code goes here
 end
 
