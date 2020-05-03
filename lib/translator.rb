@@ -23,6 +23,10 @@ end
 
 
 
-def get_english_meaning
-  # code goes here
+def get_english_meaning (file_path,emoticon)
+  library = load_library (file_path)
+  emoticon = library.keys.find do |key|
+    library[key][:japanese]==emoticon
+  end
+emoticon ? library[emoticon][:english] : "Sorry, that empticon was not found"
 end
